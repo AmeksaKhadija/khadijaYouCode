@@ -3,30 +3,15 @@
 
 int main()
 {
-    int a,b,c;
-    float D,X1,X2;
-    printf("entrer la valeur de a");
-    scanf("%d",&a);
-    printf("entrer la valeur de b");
-    scanf("%d",&b);
-    printf("entrer la valeur de c");
-    scanf("%d",&c);
-    D=(pow(b,2)-4*a*c);
-    if (D==0){
-            printf("la solution de equation est %f:/n,-b/2*a");
-    }
-    else if (D>=0){
-             X1=(-b-sqrt(D))/2*a;
-             X2=(-b+sqrt(D))/2*a;
-        printf("la solution de equation est %f %f /n",X1,X2);
-
-    }
-    else {
-        printf("equation pas de solution");
-    }
-
-
-
-
+int annees,mois,jours,heurs,minutes,secondes,ann;
+    printf("entrer l'annee \n");
+    scanf("%d", &annees);
+    ann = 2023-annees;
+    mois = ann*12;
+    jours = ann*12*30;
+    heurs = ann*12*30*24;
+    minutes = ann*12*30*24*60;
+    secondes = ann*12*30*24*60*60;
+    printf("l'annee est %dmois\n%d jours \n%d heurs \n%d minutes \n%d secondes \n%d",ann,mois,jours,heurs,minutes,secondes);
     return 0;
 }
